@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tiz Blocker Blocker",
+  "description": "This extension adds a div to prevent blocking on Tiz.",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://tiz-cycling.live/*"],
+      "js": ["tiz.js"]
+    }
+  ]
+}
