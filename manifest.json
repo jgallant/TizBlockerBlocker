@@ -14,7 +14,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["http://tiz-cycling.live/*"],
+      "matches": ["https://tiz-cycling.live/*"],
       "js": ["tiz.js"]
     }
   ]
